@@ -1,798 +1,1508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giloo LA 2026 — Where Asian Cinema Becomes Impact</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<title>Giloo 美國行程 — 戰略拜訪名單 2026/07</title>
 <style>
-  :root{
-    --brand:#ea2b40;
-    --navy-700:#0e0f11;
-    --navy-500:#1a1c20;
-    --navy-400:#252a31;
-    --fg:#ffffff;
-    --fg-2:rgba(255,255,255,.72);
-    --fg-3:rgba(255,255,255,.48);
-    --border-subtle:rgba(255,255,255,.06);
-    --border-default:rgba(255,255,255,.10);
-    --gold:#dfbc62;
-    --sans:"Geist","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    --cjk:"Noto Sans TC",var(--sans);
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:#000;font-family:var(--sans);-webkit-font-smoothing:antialiased;
-       display:flex;flex-direction:column;align-items:center;gap:28px;padding:40px 0}
+:root {
+  --navy-700: #0e0f11;
+  --navy-600: #17181b;
+  --navy-500: #1a1c20;
+  --navy-400: #252a31;
+  --navy-300: #2f343c;
+  --brand:    #ea2b40;
+  --brand-deep: #2f0404;
+  --gold:     #dfbc62;
+  --fg:       #ffffff;
+  --fg2:      rgba(255,255,255,0.72);
+  --fg3:      rgba(255,255,255,0.44);
+  --border:   rgba(255,255,255,0.09);
+  --border2:  rgba(255,255,255,0.05);
+}
 
-  .slide{width:1280px;height:720px;background:var(--navy-700);position:relative;
-         overflow:hidden;flex:none;color:var(--fg)}
-  .slide.alt{background:var(--navy-500)}
-  .pad{position:absolute;inset:0;padding:76px 96px;display:flex;flex-direction:column}
-  .center{justify-content:center}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .rule{width:64px;height:2px;background:var(--brand);margin-bottom:16px}
-  .eyebrow{font-size:13px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--brand)}
-  .eyebrow.muted{color:var(--fg-3)}
+body {
+  background: var(--navy-700);
+  color: var(--fg);
+  font-family: -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, 'Noto Sans TC', sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
 
-  .display-xl{font-size:74px;line-height:1.04;font-weight:700;letter-spacing:-1.8px}
-  .display-lg{font-size:58px;line-height:1.07;font-weight:700;letter-spacing:-1.4px}
-  .headline{font-size:46px;line-height:1.1;font-weight:700;letter-spacing:-1px}
-  .lede{font-size:20px;line-height:1.5;font-weight:400;color:var(--fg-2);max-width:840px}
-  .body-lg{font-size:19px;line-height:1.55;color:var(--fg-2)}
-  .red{color:var(--brand)}
-  .cjk{font-family:var(--cjk);letter-spacing:0}
-  .mt8{margin-top:8px}.mt16{margin-top:16px}.mt24{margin-top:24px}
-  .mt32{margin-top:32px}.mt40{margin-top:40px}.mt48{margin-top:48px}
-  .spacer{flex:1}
+/* ── HEADER ── */
+header {
+  background: var(--navy-600);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.hdr {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.logo { font-size: 15px; font-weight: 700; color: var(--brand); letter-spacing: -0.2px; }
+.hdr-meta { font-size: 12px; color: var(--fg3); }
 
-  .wordmark{font-weight:700;font-size:26px;letter-spacing:-1px;color:var(--fg)}
-  .wordmark .dot{color:var(--brand)}
-  .footer-mark{position:absolute;right:40px;bottom:30px;font-weight:700;font-size:18px;
-               letter-spacing:-.6px;color:var(--fg);opacity:.8}
-  .footer-mark .dot{color:var(--brand)}
-  .page-no{position:absolute;left:96px;bottom:32px;font-size:12px;color:var(--fg-3);letter-spacing:1px}
+/* ── HERO ── */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 32px 52px;
+}
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--brand);
+}
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--fg2);
+  max-width: 580px;
+  line-height: 1.65;
+}
 
-  /* lists */
-  ul.list{list-style:none;display:flex;flex-direction:column;gap:18px;max-width:980px}
-  ul.list li{font-size:21px;line-height:1.4;color:var(--fg-2);padding-left:28px;position:relative}
-  ul.list li::before{content:"";position:absolute;left:0;top:13px;width:14px;height:2px;background:var(--brand)}
-  ul.list li b{color:var(--fg);font-weight:600}
+/* ── STATS BAR ── */
+.stats-bar {
+  background: var(--navy-500);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  display: flex;
+  gap: 0;
+}
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 0 16px;
+  border-right: 1px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+.stat-n {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: var(--fg);
+}
+.stat-l {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fg3);
+  margin-top: 4px;
+}
 
-  /* stats */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
-  .stat .val{font-size:58px;font-weight:700;letter-spacing:-1.6px;line-height:1}
-  .stat .lab{margin-top:12px;font-size:14px;color:var(--fg-2);letter-spacing:.5px;line-height:1.35}
-  .stats.three{grid-template-columns:repeat(3,1fr)}
+/* ── NAV PILLS ── */
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.nav-pill {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--navy-400);
+  border: 1px solid var(--border);
+  color: var(--fg2);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-pill:hover { background: var(--navy-300); color: var(--fg); }
 
-  /* hero stat support */
-  .support{display:flex;align-items:baseline;gap:24px}
-  .support .val{font-size:60px;font-weight:700;letter-spacing:-1.6px;color:var(--brand);line-height:1}
-  .support .lab{font-size:19px;color:var(--fg-2);max-width:520px;line-height:1.45}
-  .pillars{display:flex;gap:48px;margin-top:30px}
-  .pillars div{font-size:17px;color:var(--fg-3);line-height:1.4;max-width:280px}
-  .pillars b{display:block;color:var(--fg-2);font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:8px}
+/* ── MAIN ── */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+}
 
-  /* cards */
-  .cards{display:grid;gap:20px}
-  .cards.two{grid-template-columns:repeat(2,1fr)}
-  .cards.three{grid-template-columns:repeat(3,1fr)}
-  .cards.five{grid-template-columns:repeat(5,1fr)}
-  .card{background:var(--navy-400);border:1px solid var(--border-default);border-radius:12px;padding:28px}
-  .card.ai{border-top:2px solid var(--brand)}
-  .card .knum{font-size:13px;font-weight:700;letter-spacing:1.4px;color:var(--brand);margin-bottom:12px}
-  .card h3{font-size:21px;font-weight:600;letter-spacing:-.2px;margin-bottom:10px}
-  .card p{font-size:15px;line-height:1.5;color:var(--fg-2)}
-  .card.sm{padding:22px}
-  .card.sm h3{font-size:17px;margin-bottom:6px}
-  .card.sm p{font-size:13px}
+/* ── CATEGORY SECTION ── */
+.cat {
+  margin-bottom: 72px;
+}
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.cat-bar {
+  width: 3px;
+  height: 26px;
+  background: var(--brand);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.cat-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+.cat-en {
+  font-size: 12px;
+  color: var(--fg3);
+  margin-top: 2px;
+}
+.cat-count {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--fg3);
+  background: var(--navy-400);
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
 
-  /* steps */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-  .step .n{font-size:40px;font-weight:700;color:var(--brand);letter-spacing:-1px;line-height:1}
-  .step h3{font-size:19px;font-weight:600;margin-top:14px;margin-bottom:8px}
-  .step p{font-size:14px;color:var(--fg-2);line-height:1.45}
+/* ── CARDS ── */
+.cards { display: flex; flex-direction: column; gap: 14px; }
 
-  /* chips */
-  .chips{display:flex;flex-wrap:wrap;gap:12px;max-width:1040px}
-  .chip{border:1px solid var(--border-default);border-radius:9999px;padding:10px 18px;font-size:16px;color:var(--fg-2)}
-  .chip.gold{border-color:var(--gold);color:var(--gold)}
+.card {
+  background: var(--navy-400);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: rgba(255,255,255,0.15); }
+.card.top { border-color: rgba(234,43,64,0.35); }
 
-  /* quote */
-  .quote{font-size:40px;line-height:1.25;font-weight:600;letter-spacing:-.6px;max-width:1000px}
-  .quote .mark{color:var(--brand)}
-  .attr{margin-top:24px;font-size:16px;color:var(--fg-2)}
+.card-head {
+  padding: 24px 26px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.pri {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+.pri-3 { background: var(--brand); color: #fff; }
+.pri-2 { background: rgba(234,43,64,0.18); color: var(--brand); border: 1px solid rgba(234,43,64,0.28); }
+.pri-1 { background: rgba(255,255,255,0.05); color: var(--fg3); border: 1px solid var(--border); }
 
-  /* value chain */
-  .chain{display:flex;align-items:stretch;gap:10px;margin-top:8px}
-  .chain .node{flex:1;border:1px solid var(--border-default);border-radius:10px;padding:18px 16px;text-align:center;color:var(--fg-3);font-size:15px}
-  .chain .node b{display:block;color:var(--fg-2);font-weight:600;font-size:16px;margin-bottom:4px}
-  .chain .node.bad{border-color:rgba(234,43,64,.5)}
-  .chain .node.bad b{color:var(--brand)}
-  .chain .node.giloo{background:var(--navy-400);border-color:var(--brand);border-width:1px;border-top:2px solid var(--brand)}
-  .chain .node.giloo b{color:var(--fg)}
-  .chain .arrow{align-self:center;color:var(--fg-3);font-size:20px}
+.name-block { flex: 1; min-width: 0; }
+.co-name {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.badge-new {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(234,43,64,0.15);
+  color: var(--brand);
+  border: 1px solid rgba(234,43,64,0.3);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.badge-gold {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(223,188,98,0.12);
+  color: var(--gold);
+  border: 1px solid rgba(223,188,98,0.25);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.co-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.chip {
+  font-size: 12px;
+  color: var(--fg3);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.chip svg { opacity: 0.5; }
 
-  @media print{
-    body{background:#fff;gap:0;padding:0}
-    .slide{page-break-after:always}
-    @page{size:1280px 720px;margin:0}
-  }
+.card-body {
+  padding: 20px 26px 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+}
+.sec { }
+.sec.full { grid-column: 1 / -1; }
+
+.sec-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+.sec-text {
+  font-size: 13.5px;
+  color: var(--fg2);
+  line-height: 1.65;
+}
+.sec-text strong { color: var(--fg); font-weight: 600; }
+.sec-text ul { padding-left: 16px; }
+.sec-text li { margin-bottom: 4px; }
+
+.card-div {
+  height: 1px;
+  background: var(--border2);
+  margin: 4px 26px 0;
+}
+
+/* Contact block */
+.contact-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-person {
+  background: var(--navy-500);
+  border-radius: 8px;
+  padding: 12px 16px;
+  flex: 1;
+  min-width: 200px;
+}
+.cp-name { font-size: 13.5px; font-weight: 600; margin-bottom: 2px; }
+.cp-role { font-size: 12px; color: var(--fg3); margin-bottom: 8px; }
+.cp-link {
+  font-size: 12px;
+  color: var(--brand);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.cp-link:hover { text-decoration: underline; }
+
+/* ── PITCH BOX ── */
+.pitch-box {
+  background: var(--brand-deep);
+  border: 1px solid rgba(234,43,64,0.25);
+  border-radius: 12px;
+  padding: 32px 36px;
+  margin-top: 16px;
+}
+.pitch-box h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--brand);
+  margin-bottom: 14px;
+}
+.pitch-box p {
+  font-size: 15px;
+  color: var(--fg2);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.pitch-box p:last-child { margin-bottom: 0; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--brand-deep);
+  border-top: 1px solid rgba(234,43,64,0.18);
+  padding: 36px 32px;
+  text-align: center;
+}
+footer p { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.8; }
+
+/* ── GOALS SECTION ── */
+.goals-section { background: var(--navy-600); border-bottom: 1px solid var(--border); padding: 52px 32px; }
+.goals-inner { max-width: 1100px; margin: 0 auto; }
+.goals-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--brand); margin-bottom: 28px; display: flex; align-items: center; gap: 10px; }
+.goals-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--brand); }
+.goals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.goal-card { background: var(--navy-400); border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px; position: relative; overflow: hidden; }
+.goal-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--brand); opacity: 0.5; }
+.goal-num { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--brand); opacity: 0.7; margin-bottom: 12px; text-transform: uppercase; }
+.goal-title { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 12px; }
+.goal-desc { font-size: 13px; color: var(--fg2); line-height: 1.65; margin-bottom: 20px; }
+.goal-cos { display: flex; flex-wrap: wrap; gap: 6px; }
+.goal-cos span { font-size: 11px; font-weight: 600; padding: 3px 10px; background: var(--navy-500); border: 1px solid var(--border); border-radius: 999px; color: var(--fg3); }
+
+/* ── ASSET BAR ── */
+.asset-bar { background: rgba(234,43,64,0.05); border-bottom: 1px solid rgba(234,43,64,0.14); }
+.asset-inner { max-width: 1100px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: center; gap: 0; }
+.asset-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--brand); white-space: nowrap; padding-right: 28px; border-right: 1px solid rgba(234,43,64,0.2); }
+.asset-items { display: flex; flex: 1; }
+.asset-item { flex: 1; padding: 0 24px; border-right: 1px solid rgba(234,43,64,0.1); }
+.asset-item:last-child { border-right: none; }
+.asset-n { font-size: 16px; font-weight: 700; color: var(--fg); letter-spacing: -0.3px; margin-bottom: 3px; }
+.asset-l { font-size: 11px; color: var(--fg3); line-height: 1.5; }
+
+/* ── RELATIONSHIP TAGS ── */
+.rel-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.3px; padding: 3px 9px; border-radius: 999px; white-space: nowrap; display: inline-block; }
+.rel-hot  { background: rgba(52,199,89,0.1);  color: #34c759; border: 1px solid rgba(52,199,89,0.25); }
+.rel-learn{ background: rgba(175,82,222,0.1); color: #af52de; border: 1px solid rgba(175,82,222,0.25); }
+.rel-partner{ background: rgba(223,188,98,0.1); color: var(--gold); border: 1px solid rgba(223,188,98,0.28); }
+.rel-eco  { background: rgba(255,255,255,0.04); color: var(--fg3); border: 1px solid var(--border); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  h1 { font-size: 30px; }
+  .stats-inner { flex-wrap: wrap; gap: 0; }
+  .stat { flex: 0 0 50%; border-bottom: 1px solid var(--border); padding: 16px; }
+  .stat:nth-child(2n) { border-right: none; }
+  .card-body { grid-template-columns: 1fr; }
+  .card-head { flex-wrap: wrap; }
+  .hero { padding: 48px 20px 36px; }
+  main { padding: 40px 20px 60px; }
+  .goals-section { padding: 36px 20px; }
+  .goals-grid { grid-template-columns: 1fr; }
+  .asset-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .asset-label { border-right: none; padding-right: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(234,43,64,0.2); width: 100%; }
+  .asset-items { flex-direction: column; gap: 12px; width: 100%; }
+  .asset-item { padding: 0; border-right: none; }
+}
 </style>
 </head>
 <body>
 
-<!-- 1 · COVER -->
-<section class="slide">
-  <div class="pad">
-    <div class="wordmark">giloo<span class="dot">.</span></div>
-    <div class="spacer"></div>
-    <div class="rule"></div>
-    <div class="eyebrow mt8" style="margin-bottom:26px">Giloo · Los Angeles 2026</div>
-    <h1 class="display-xl">Beyond Festivals<br>and Streamers</h1>
-    <p class="body-lg mt24">How Films Find Audiences, Unlock Values, and Drive Impact</p>
-    <div class="spacer"></div>
+<!-- HEADER -->
+<header>
+  <div class="hdr">
+    <span class="logo">Giloo</span>
+    <span class="hdr-meta">美國行程戰略拜訪名單 &nbsp;·&nbsp; 2026 / 07</span>
   </div>
-</section>
+</header>
 
-<!-- 2 · PROBLEM (who loses — three cards) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">The Problem</div>
-    <h2 class="headline">Good films shouldn't <span class="red">disappear</span><br>when they're finished</h2>
-    <div class="cards three mt48">
-      <div class="card"><div class="knum">AUDIENCES</div><h3>Can't find them</h3><p>Overseas Chinese &amp; global viewers can't find quality, socially-meaningful Asian films.</p></div>
-      <div class="card"><div class="knum">CREATORS</div><h3>Can't sustain the work</h3><p>Filmmakers depend on distributors to buy rights — funding &amp; revenue stay limited.</p></div>
-      <div class="card"><div class="knum">MARKET</div><h3>Has no channel</h3><p>More films are made every year, but there's no real distribution or viewing path.</p></div>
+<!-- HERO -->
+<div class="hero">
+  <div class="eyebrow">2026 年 7 月 美國行程</div>
+  <h1>戰略拜訪名單</h1>
+  <p class="hero-sub">三大 AI 目標：用 AI 看電影、找 TA 和電影預測、用 AI 做發行工具。<br>帶著 1,819 個 KOC 名單和 Film Brain，每一場會議都從「Giloo 能給什麼、能得到什麼」出發。</p>
+</div>
+
+<!-- GOALS -->
+<section class="goals-section" id="goals">
+  <div class="goals-inner">
+    <div class="goals-eyebrow">此行三大 AI 目標</div>
+    <div class="goals-grid">
+      <div class="goal-card">
+        <div class="goal-num">目標 01</div>
+        <div class="goal-title">用 AI 看電影</div>
+        <div class="goal-desc">幫觀眾用 AI 發現對的電影——個人化推薦、curation、可發現性。Film Brain 的核心能力正是這件事，Giloo 在這些公司面前是<strong style="color:var(--fg)">賣方</strong>。</div>
+        <div class="goal-cos">
+          <span>Documentary+ / acTVe</span>
+          <span>Kinema</span>
+          <span>Eventive</span>
+        </div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-num">目標 02</div>
+        <div class="goal-title">找 TA 和電影預測</div>
+        <div class="goal-desc">上映前預測哪個受眾會買單、哪個創作者能觸及他們。從數據回流到 KOC 匹配，AI 把分析轉為發行行動。</div>
+        <div class="goal-cos">
+          <span>Filmhub</span>
+          <span>Abramorama</span>
+          <span>Film Collaborative</span>
+        </div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-num">目標 03</div>
+        <div class="goal-title">用 AI 做發行工具</div>
+        <div class="goal-desc">自動化 KOC outreach、素材派送、合約追蹤、分潤計算。這些公司現在用人工做，Film Brain 要解決的正是這個流程。</div>
+        <div class="goal-cos">
+          <span>Picture Motion</span>
+          <span>Agentio</span>
+          <span>Abramorama</span>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
 </section>
 
-<!-- 3 · PROBLEM (statement) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:34px">The Problem</div>
-    <h2 class="display-lg">It's not a content problem.<br>It's a <span class="red">distribution</span> problem.</h2>
-    <div class="support mt48">
-      <div class="val">90%</div>
-      <div class="lab">of good films never reach a wide audience —<br>the work exists, but no one is switched on to watch it.</div>
+<!-- GILOO ASSETS -->
+<div class="asset-bar">
+  <div class="asset-inner">
+    <div class="asset-label">Giloo 帶去的籌碼</div>
+    <div class="asset-items">
+      <div class="asset-item">
+        <div class="asset-n">1,819 個 KOC</div>
+        <div class="asset-l">已篩選名單，分波次 · 類別 · email 驗證<br>讓 Giloo 從「工具公司」變成「有網絡的發行夥伴」</div>
+      </div>
+      <div class="asset-item">
+        <div class="asset-n">Film Brain</div>
+        <div class="asset-l">AI 受眾分析 + KOC 動員系統<br>可現場 demo 的實際運作結果</div>
+      </div>
+      <div class="asset-item">
+        <div class="asset-n">亞洲片庫</div>
+        <div class="asset-l">紀錄片 + 社會影響力內容<br>Documentary+ 最大的內容空白地帶</div>
+      </div>
+      <div class="asset-item">
+        <div class="asset-n">亞洲市場入口</div>
+        <div class="asset-l">台灣深耕 8 年，最懂社會影響力紀錄片的華語受眾<br>片子要進亞洲，Giloo 是不可繞過的策展夥伴</div>
+      </div>
     </div>
-    <div class="spacer"></div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
+</div>
 
-<!-- 3 · TRANSITION -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:26px">The Answer</div>
-    <h2 class="display-lg">That's why Giloo exists.</h2>
-    <p class="lede mt24">Giloo connects meaningful Asian films with the audiences, communities, and revenue paths they need to survive beyond festivals.</p>
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-n">20</div><div class="stat-l">拜訪對象</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l">城市</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l">必訪 ★★★</div></div>
+    <div class="stat"><div class="stat-n">7</div><div class="stat-l">整合自同事名單</div></div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
+</div>
 
-<!-- LEARNED (after the answer) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">What we've learned</div>
-    <h2 class="headline">Three things we learned</h2>
-    <div class="cards three mt48">
-      <div class="card"><div class="knum">01</div><h3>Curation beats the algorithm</h3><p>A human pointing at the right film does more for a niche title than any feed.</p></div>
-      <div class="card"><div class="knum">02</div><h3>People pay for meaning</h3><p>Audiences will pay for issues and ideas — not only for entertainment.</p></div>
-      <div class="card"><div class="knum">03</div><h3>Community out-distributes ads</h3><p>A film travels further through the people who love it than through any ad budget.</p></div>
+<!-- NAV -->
+<div class="nav-wrap">
+  <a href="#goals" class="nav-pill" style="background:var(--brand);color:#fff;border-color:var(--brand)">此行目標</a>
+  <a href="#streaming" class="nav-pill">串流發行平台</a>
+  <a href="#community" class="nav-pill">社群電影發行</a>
+  <a href="#marketing" class="nav-pill">行銷 &amp; KOC</a>
+  <a href="#institutions" class="nav-pill">電影機構</a>
+  <a href="#sales" class="nav-pill">內容代理 &amp; 通路</a>
+  <a href="#ai" class="nav-pill">AI 製作工具</a>
+</div>
+
+<!-- MAIN -->
+<main>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY 1：串流發行平台
+════════════════════════════════════════════ -->
+<section class="cat" id="streaming">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">串流發行平台</div>
+      <div class="cat-en">Streaming &amp; Distribution Platforms</div>
     </div>
-    <div class="spacer"></div>
+    <div class="cat-count">2 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- STORY · the Iwai night -->
-<section class="slide alt">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">One night that proved it</div>
-    <h2 class="display-lg">1,000+ people showed up<br>for one film.</h2>
-    <p class="lede mt40">We streamed <i>All About Lily Chou-Chou</i> — Shunji Iwai's 2001 film — and over a thousand people logged in to watch it together, then stayed to talk with the director himself.</p>
-    <p class="lede mt24">A film's life doesn't end at release. People will still gather for it, years later — if you give them a way.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
+  <div class="cards">
 
-<!-- 4 · AGENDA -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:34px">Agenda</div>
-    <h2 class="headline">What we'll cover</h2>
-    <ul class="list mt40">
-      <li><b>1 — What is Giloo?</b></li>
-      <li><b>2 — For Creators:</b> upload, distribute, earn</li>
-      <li><b>3 — For Everyone:</b> turn watching and sharing into impact</li>
-      <li><b>4 — Where we are going</b></li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 5 · SECTION 1 -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:26px">About Giloo</div>
-    <h2 class="display-lg">1 &nbsp;·&nbsp; What is Giloo</h2>
-    <p class="lede mt24">Asia's home for documentary, art-house, and issue-driven film.</p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 6 · WHAT IS GILOO -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">About Giloo</div>
-    <h2 class="headline">Not an algorithm feed.<br>A <span class="red">curated</span> home for film.</h2>
-    <ul class="list mt40">
-      <li>A curation-led home for documentary, art-house &amp; issue-driven cinema</li>
-      <li>The leading stage for <b>Chinese-language and global filmmakers</b></li>
-      <li>Founded 2018 — Asia's first documentary platform</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- LIBRARY + MUSEUM (humanistic positioning) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">A different kind of place</div>
-    <h2 class="headline">Part library, part art museum</h2>
-    <div class="cards two mt48">
-      <div class="card"><div class="knum">LIKE A LIBRARY</div><p>Films you won't find anywhere else — kept alive, catalogued, and always ready to be discovered.</p></div>
-      <div class="card"><div class="knum">LIKE AN ART MUSEUM</div><p>Every film is chosen, framed, and given context — meant to be seen and understood, not just streamed.</p></div>
+    <!-- Documentary+ / acTVe -->
+    <div class="card top">
+      <div class="card-head">
+        <span class="pri pri-3">★★★ 必訪</span>
+        <div class="name-block">
+          <div class="co-name">
+            Documentary+ / acTVe
+            <span class="badge-new">新發現</span>
+            <span class="badge-gold">名單外補充</span>
+          </div>
+          <div class="co-chips">
+            <span class="chip">📍 West Hollywood, CA</span>
+            <span class="chip">🎯 LA 行程</span>
+            <span class="chip">💰 已完成收購 + 新一輪投資</span>
+            <span class="rel-tag rel-hot">對 Giloo 有興趣</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            紀錄片串流平台，原由 AI 紀錄片製作公司 XTR 持有，<strong>2026 年 3 月被 FAST 串流公司 acTVe 收購</strong>，正在全面重建為「紀錄片的 Netflix」。覆蓋 <strong>80+ 國、美國 1 億戶以上家庭</strong>，上架於 Roku、Apple TV、Amazon Fire TV、Samsung TV Plus、DirecTV、Fubo、Plex 等主流平台。商業模式為 SVOD（$4.99/月）+ AVOD + FAST 三軌。2026 年 4 月起每天獨家上架一部紀錄片。<strong>2026 年 6 月 16 日 Ionic Studios 剛完成策略投資</strong>，接管廣告業務，公司正處於最活躍的資源整合期。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            <ul>
+              <li>新領導團隊剛就位，正在建立合作夥伴名單——<strong>空窗期只有 6–12 個月</strong></li>
+              <li>他們明確說要「帶入未被充分代表的故事」，亞洲紀錄片是平台最大的內容空白</li>
+              <li>他們要投資 curation（策展）和 discoverability（可發現性），但完全沒有 AI 工具——Film Brain 正是他們缺的</li>
+              <li>80+ 國覆蓋 = Giloo 亞洲內容出海的最直接管道</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>短期：</strong>Giloo 片庫授權上架 Documentary+，建立收入與曝光。<br><br>
+            <strong>中期：</strong>Film Brain 作為 Documentary+ 的 AI 內容發現層，為每部片做觀眾 cluster 分析 + 行銷素材生成。<br><br>
+            <strong>長期：</strong>Giloo 成為 Documentary+ 的亞洲區獨家內容策展夥伴，或更深的戰略整合。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Geoff Clark</div>
+              <div class="cp-role">CEO，acTVe &amp; Documentary+</div>
+              <a class="cp-link" href="https://www.linkedin.com/in/geoffreyjamesclark" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                linkedin.com/in/geoffreyjamesclark
+              </a>
+            </div>
+            <div class="contact-person">
+              <div class="cp-name">Kyle Brunick</div>
+              <div class="cp-role">COO，Documentary+</div>
+              <a class="cp-link" href="https://www.linkedin.com/in/kylebrunick" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                linkedin.com/in/kylebrunick
+              </a>
+            </div>
+            <div class="contact-person">
+              <div class="cp-name">開場建議</div>
+              <div class="cp-role">LinkedIn InMail 給 Geoff Clark</div>
+              <span class="cp-link" style="color:var(--fg3); cursor:default;">"We run Giloo, an AI-native distribution platform for Asian documentary film. We think there's a significant gap in Asian content on Documentary+ that we're uniquely positioned to help with. Happy to find 20 minutes to compare notes."</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="lede mt40">Especially the issue-driven films the mainstream skips — this is where they live.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- WHY TAIWAN -->
-<section class="slide alt">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Why Taiwan</div>
-    <h2 class="headline">A rare soil for<br>issue-driven film</h2>
-    <p class="lede mt40">Taiwan has something uncommon: a diverse, inclusive civil society that actually shows up for difficult films — cultural curiosity, open civic debate, and deep engagement with social questions.</p>
-    <p class="lede mt24">In that environment, documentaries meet a more receptive audience — and a clearer path to impact.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 7 · BY THE NUMBERS -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">By the Numbers</div>
-    <h2 class="headline">Six years of building a stage</h2>
-    <div class="stats mt48">
-      <div class="stat"><div class="val">200<span class="red">+</span></div><div class="lab">COLLABORATING WRITERS &amp; ARTISTS</div></div>
-      <div class="stat"><div class="val">400<span class="red">+</span></div><div class="lab">THEMATIC CURATIONS</div></div>
-      <div class="stat"><div class="val">5,000<span class="red">+</span></div><div class="lab">PUBLISHED FILM NOTES</div></div>
-      <div class="stat"><div class="val">100<span class="red">+</span></div><div class="lab">MEDIA FEATURES</div></div>
+    <!-- Filmhub -->
+    <div class="card top">
+      <div class="card-head">
+        <span class="pri pri-3">★★★ 必訪</span>
+        <div class="name-block">
+          <div class="co-name">Filmhub</div>
+          <div class="co-chips">
+            <span class="chip">📍 Santa Monica, CA → New York</span>
+            <span class="chip">💰 累計募資 $1,380 萬（Series A 2025/06）</span>
+            <span class="chip">🎬 30,000+ 部片</span>
+            <span class="rel-tag rel-learn">取經</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            2016 年成立，早期由 a16z 投資，2025 年 6 月完成 $698 萬 Series A（NextEquity Partners 領投）。目前管理 <strong>30,000+ 部片</strong>，每月上新 500–1,000 部，覆蓋戲院、SVOD、AVOD、FAST、廣播等全通路。近期推出自有串流服務 Relay，正在積極擴張（目標每月 20 個新收購案）。CEO Alan d'Escragnolle 曾公開強調 AI 技術對簡化發行流程的重要性。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Filmhub 是<strong>管道</strong>，Giloo 是<strong>大腦</strong>——能力不重疊。Filmhub 知道把片推到哪些平台，但不知道該對誰說什麼、找哪些 KOC、怎麼激活社群。Film Brain 可以成為 Filmhub 片方的 AI 升級選項，顯著提升他們平台的片方留存率與成效數據。剛完成融資、在擴張中，是最好的談合作時機。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>API 整合：</strong>片方在 Filmhub 上傳後，可選擇接入 Giloo Film Brain，做完觀眾分析和 KOC 動員再推出去。Filmhub 提供通路，Giloo 提供觀眾智能。<br><br>
+            <strong>長期：</strong>如果整合數據好看，雙方有更深的合作空間。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Alan d'Escragnolle</div>
+              <div class="cp-role">CEO，Filmhub</div>
+              <a class="cp-link" href="https://www.linkedin.com/company/filmhub" target="_blank">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                Filmhub LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
+
+  </div><!-- /cards -->
 </section>
 
-<!-- 8 · AUDIENCE -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">The Audience</div>
-    <h2 class="headline">Who comes to Giloo</h2>
-    <div class="cards three mt48">
-      <div class="card"><div class="knum">INDUSTRY INSIDERS</div><p>Filmmakers, producers, editors, cinematographers, actors and international producers — they come to study films, discover new voices, and find future collaborators.</p></div>
-      <div class="card"><div class="knum">DEEP THINKERS</div><p>Curators, senior cinephiles, knowledge seekers and scholars — they explore stories, culture, ideas, and visual beauty.</p></div>
-      <div class="card"><div class="knum">COMMUNITY VOICES</div><p>They share films through social media, classrooms, screenings, talks, film clubs, and their own communities.</p></div>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY 2：社群電影發行
+════════════════════════════════════════════ -->
+<section class="cat" id="community">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">社群電影發行</div>
+      <div class="cat-en">Community Film Distribution</div>
     </div>
-    <p class="lede mt40">They don't just watch films — they <span class="red">recommend, share, discuss</span>, and bring stories into their communities.</p>
-    <div class="spacer"></div>
+    <div class="cat-count">4 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 9 · REACH -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Our Reach</div>
-    <h2 class="headline">We can move an audience</h2>
-    <div class="stats three mt48">
-      <div class="stat"><div class="val">281,834<span class="red">+</span></div><div class="lab">NEWSLETTER SUBSCRIBERS · 37% OPEN RATE</div></div>
-      <div class="stat"><div class="val">66,321<span class="red">+</span></div><div class="lab">FACEBOOK · 7.5% ENGAGEMENT</div></div>
-      <div class="stat"><div class="val">27,846<span class="red">+</span></div><div class="lab">INSTAGRAM · 7.8% ENGAGEMENT</div></div>
+  <div class="cards">
+
+    <!-- Kinema -->
+    <div class="card top">
+      <div class="card-head">
+        <span class="pri pri-3">★★★ 必訪</span>
+        <div class="name-block">
+          <div class="co-name">Kinema</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York / 遠端</span>
+            <span class="chip">💰 $200 萬種子輪（James Murdoch 參投）</span>
+            <span class="chip">🤝 已與 Seed&Spark 整合</span>
+            <span class="rel-tag rel-partner">合作潛力</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            2023 年成立的社群電影發行平台，讓 filmmaker 可在全球任何地方辦直播放映、TVOD、實體放映。背後投資人包含 <strong>James Murdoch 的 Lupa Systems</strong>。2025 年與 Seed&Spark 打通「眾籌 → 發行」整合：眾籌成功的片方自動享有 Kinema 發行服務。強調 filmmaker 對發行的完整掌控，並提供 direct rental、互動式串流活動、社群建立工具。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            兩家能力<strong>完全互補、規模相近</strong>，是整個名單裡最自然的合作或合併對象。Kinema 有美國社區放映基礎設施，Giloo 有 Film Brain + KOC 動員 + 亞洲內容庫；兩家的客戶（獨立片方）完全一樣。Kinema 解決「放映場地和技術」，Giloo 解決「誰來看、怎麼說服他們來」。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>短期：</strong>雙向 referral——Giloo 片方在美國放映用 Kinema 基礎設施，Kinema 片方做 AI 發行規劃用 Film Brain。<br><br>
+            <strong>中期：</strong>共建「AI 觀眾識別 → 實際放映」完整流程。<br><br>
+            <strong>長期：</strong>規模相近、能力互補，深度戰略合作是自然的下一步。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Spenser Cohen</div>
+              <div class="cp-role">共同創辦人，Kinema</div>
+              <a class="cp-link" href="https://kinema.com" target="_blank">kinema.com</a>
+            </div>
+            <div class="contact-person">
+              <div class="cp-name">切入建議</div>
+              <div class="cp-role">透過 Seed&Spark 引薦效果最好</div>
+              <span class="cp-link" style="color:var(--fg3); cursor:default;">或直接 LinkedIn 聯繫創辦人</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="lede mt40">A curated newsletter goes out every Friday.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 10 · CURATION -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Curation</div>
-    <h2 class="headline">Curation is our craft</h2>
-    <ul class="list mt40">
-      <li>Monthly <b>director spotlights</b> &amp; issue-driven themes</li>
-      <li>Hou Hsiao-Hsien · Hamaguchi Ryusuke · Agnès Varda · Wim Wenders</li>
-      <li>Co-branded with <b>Taipei Film Festival · TIDF · Women Make Waves · Le Fresnoy · National Human Rights Museum</b></li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 11 · PARTNERS -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Trusted by the Field</div>
-    <h2 class="headline">We don't stand alone</h2>
-    <p class="body-lg mt32" style="color:var(--fg-3);text-transform:uppercase;letter-spacing:1px;font-size:13px;font-weight:700">Tech</p>
-    <div class="chips mt16"><span class="chip">Appier</span><span class="chip">KKStream</span></div>
-    <p class="body-lg mt24" style="color:var(--fg-3);text-transform:uppercase;letter-spacing:1px;font-size:13px;font-weight:700">Cultural Institutions</p>
-    <div class="chips mt16"><span class="chip">Taipei Film Festival</span><span class="chip">TIDF</span><span class="chip">National Theater &amp; Concert Hall</span><span class="chip">NTMoFA</span><span class="chip">National Geographic</span></div>
-    <p class="body-lg mt24" style="color:var(--fg-3);text-transform:uppercase;letter-spacing:1px;font-size:13px;font-weight:700">Content</p>
-    <div class="chips mt16"><span class="chip">CNEX</span><span class="chip">PTS</span><span class="chip">Dogwoof</span><span class="chip">Journeyman</span><span class="chip">Taskovski</span><span class="chip">Syndicado</span></div>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 12 · PRESS -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">In the Press</div>
-    <p class="quote"><span class="mark">“</span>Taiwan's strongest documentary platform —<br>a unique window on the world.<span class="mark">”</span></p>
-    <p class="attr">100+ features across Taiwan's top media · International coverage in <i>Variety</i></p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 13 · VALUE CHAIN (backup) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow muted" style="margin-bottom:24px">Backup · Industry View</div>
-    <h2 class="headline">Distribution is the <span class="red">broken link</span></h2>
-    <div class="chain mt48">
-      <div class="node"><b>Development</b>script · funding</div>
-      <div class="arrow">→</div>
-      <div class="node"><b>Post</b>edit · subtitles</div>
-      <div class="arrow">→</div>
-      <div class="node bad"><b>Distribution</b>rights · marketing · reach</div>
-      <div class="arrow">→</div>
-      <div class="node"><b>Theatrical</b>screenings</div>
-      <div class="arrow">→</div>
-      <div class="node giloo"><b>Platform · Giloo</b>where the work finally lives</div>
+    <!-- Seed&Spark -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Seed&Spark</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">🎬 電影眾籌平台</span>
+            <span class="chip">🤝 Kinema 整合夥伴</span>
+            <span class="rel-tag rel-partner">合作潛力</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            電影專用眾籌平台，定位是「讓創作者和觀眾一起把故事做出來」。已與 Kinema 打通，讓眾籌成功的片方直接進入 Kinema 的發行管道。CEO Amanda Kelso。專注服務獨立電影、紀錄片的早期製作融資，社群黏著度高。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            三方生態系的邏輯非常清楚：<strong>Seed&Spark（募資）→ Kinema（放映）→ Giloo（AI 觀眾動員）</strong>。三家合起來對獨立片方是「從有想法到找到觀眾」的完整路徑，而且每家的客戶完全重疊。Giloo 是這條鏈上缺少的最後一塊。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            眾籌成功的片方在上映前，透過 Seed&Spark 平台接入 Giloo Film Brain，取得 AI 觀眾分析 + KOC 推薦名單。對 Seed&Spark 是提升片方服務價值，對 Giloo 是進入美國早期獨立片社群的管道。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Amanda Kelso</div>
+              <div class="cp-role">CEO，Seed&Spark</div>
+              <a class="cp-link" href="https://www.seedandspark.com" target="_blank">seedandspark.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="lede mt48">Every layer assumes marketing is the next layer's job. Giloo rebuilds the missing distribution step.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 14 · SECTION 2 -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:26px">For Creators</div>
-    <h2 class="display-lg">2 &nbsp;·&nbsp; Giloo Creator</h2>
-    <p class="lede mt24">Your Story, Your Audience.</p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 15 · CREATOR OVERVIEW -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">For Creators</div>
-    <h2 class="display-lg">Upload it. Reach the world.<br>Get <span class="red">paid</span>.</h2>
-    <div class="cards three mt48">
-      <div class="card ai"><div class="knum">01 — UPLOAD</div><h3>Upload it yourself</h3><p>A simple Creator Dashboard — no gatekeeper required.</p></div>
-      <div class="card ai"><div class="knum">02 — DISTRIBUTE</div><h3>You set the terms</h3><p>Territories, pricing, worldwide reach, AI subtitles.</p></div>
-      <div class="card ai"><div class="knum">03 — EARN</div><h3>Five ways to earn</h3><p>Streaming, rentals, screenings, fundraising, donations.</p></div>
+    <!-- Eventive -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Eventive</div>
+          <div class="co-chips">
+            <span class="chip">📍 遠端（美國）</span>
+            <span class="chip">🎪 Sundance 官方平台</span>
+            <span class="chip">🎬 影展 &amp; 獨立發行</span>
+            <span class="rel-tag rel-partner">合作探索</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            獨立電影影展與發行的串流 + 售票平台，現為 <strong>Sundance 官方平台</strong>。功能涵蓋售票、pass 管理、線上串流、觀眾數據、影片指南、投票系統。服務對象：大量影展、獨立發行商、片方。是美國最重要的 arthouse 和影展生態系基礎設施之一。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Eventive 有所有 arthouse / 影展片方的深度關係，知道一部片被多少人看了、在哪裡看，但<strong>不知道這些觀眾背後的偏好 cluster，也不知道下一步怎麼觸達他們</strong>。Film Brain 可以把 Eventive 的數據轉化成下一步的發行行動。客戶重疊度極高。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            Film Brain 嵌入 Eventive 後台：放映結束後，片方拿到觀眾 cluster 分析 + KOC 推薦名單，而不只是觀看數字。對 Eventive 是產品升級，對 Giloo 是進入美國影展生態系的管道。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Eventive 團隊</div>
+              <div class="cp-role">透過 Sundance 或影展圈人脈引薦效果最好</div>
+              <a class="cp-link" href="https://eventive.org" target="_blank">eventive.org</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 16 · UPLOAD -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Upload</div>
-    <h2 class="headline">A more direct path to audiences</h2>
-    <ul class="list mt40">
-      <li>Creator Dashboard — <b>easily upload, freely edit</b></li>
-      <li>Guided steps: details, cover, stills, awards, cast &amp; crew</li>
-      <li>Master film, subtitles, pricing, license, visibility</li>
-      <li>A smooth, simple backend built for filmmakers</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 17 · CREATOR PAGE -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Your Page</div>
-    <h2 class="headline">A home for you and your work</h2>
-    <ul class="list mt40">
-      <li>Audiences explore your films, follow, and <b>support in one click</b></li>
-      <li>Direct links to your social media</li>
-      <li>A creator journal to share insight and engage fans</li>
-      <li>Tease upcoming projects to attract early sponsorship</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 18 · FIVE WAYS TO EARN -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Earn</div>
-    <h2 class="headline">Five ways to earn</h2>
-    <div class="cards five mt48">
-      <div class="card sm"><h3>SVOD</h3><p>Subscription revenue share</p></div>
-      <div class="card sm"><h3>TVOD</h3><p>Rentals</p></div>
-      <div class="card sm"><h3>Screenings</h3><p>Public &amp; group</p></div>
-      <div class="card sm"><h3>Fundraising</h3><p>Back new projects</p></div>
-      <div class="card sm"><h3>Donations</h3><p>Direct audience support</p></div>
+    <!-- Gathr -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Gathr</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">📅 2011 年成立，13 年老玩家</span>
+            <span class="chip">🎭 Theatrical On Demand 發明者</span>
+            <span class="rel-tag rel-learn">取經</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            2011 年成立，發明「Theatrical On Demand（TOD）」概念，13 年累計 612 個 campaign、1,840+ 場放映，美加 3,000+ 合作戲院。近期推出 TheatricalRun（自助式上架工具）和 <strong>Partner TVOD</strong>（讓機構主持自己的 VOD 頁面）。Partner TVOD 是 Giloo KOC 模型的機構版本——讓 NGO、工會、學校各自有一個「自己版本」的電影 VOD 頁面，用自己的社群推、賺差價。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            <strong>學習歷史教訓，避開同樣的坑。</strong> Gathr 13 年只有 1,840 場放映，說明沒有 AI 輔助的人工動員天花板很低。「發起容易，動員到 tip 很難」是 Giloo KOC 系統面對的同樣問題。他們的 Partner TVOD 模型（機構版 KOC）是最直接的參考對象。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            戰略合作優先級不高，但 Gathr 做了機構版 KOC，Giloo 要做個人版 + AI 素材生成。可以談技術合作，讓 Giloo 的 KOC 系統對接 Gathr 的場地網絡——Giloo 負責找人動員，Gathr 負責場地預訂。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Scott Glosserman</div>
+              <div class="cp-role">創辦人 / CEO，Gathr</div>
+              <a class="cp-link" href="https://gathr.com" target="_blank">gathr.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
+
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
 </section>
 
-<!-- 19 · TRANSPARENT -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Revenue</div>
-    <h2 class="headline">Transparent by design</h2>
-    <ul class="list mt40">
-      <li>SVOD: <b>USD 0.4 per viewing hour</b></li>
-      <li>Everything else: Price − tax − 10% Giloo fee − payment fee</li>
-      <li>A real-time revenue dashboard, broken down by source</li>
-      <li>Export your full report anytime</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 20 · DISTRIBUTION CONTROL -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Distribute</div>
-    <h2 class="headline">You control distribution</h2>
-    <ul class="list mt40">
-      <li>Choose viewing territories — Taiwan, US, or <b>worldwide</b></li>
-      <li>Set your own license period</li>
-      <li>Set and adjust pricing anytime, by market</li>
-      <li>Flexible rights to match your distribution status</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 21 · AI SUBTITLES -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Go Global</div>
-    <h2 class="headline">Go global, <span class="red">effortlessly</span></h2>
-    <ul class="list mt40">
-      <li><b>One-click AI subtitle generation</b></li>
-      <li>Traditional Chinese · Simplified Chinese · English (more in development)</li>
-      <li>Upload one source file → multi-language subtitles</li>
-      <li>Lower distribution costs, reach the world</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 22 · ACTIVE DISTRIBUTION (AI) -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">Finding your audience</div>
-    <h2 class="display-lg">We don't just host your film.<br>We help it <span class="red">find its people</span>.</h2>
-    <ul class="list mt40">
-      <li>AI helps match your finished film to the viewers most likely to love it</li>
-      <li>Paired with human curators and Impact Partners who carry it further</li>
-      <li>You keep full control — your rights, your pricing, your call</li>
-      <li>It works on <b>distribution</b> — never on how your film is made</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 23 · FIND AUDIENCE -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Reach</div>
-    <h2 class="headline">We help you find your audience</h2>
-    <ul class="list mt40">
-      <li>Cross-disciplinary curators &amp; international festival partnerships</li>
-      <li><b>Giloo Asian Online Film Festival</b></li>
-      <li>Your work, matched to the people who will care</li>
-    </ul>
-    <p class="lede mt40" style="color:var(--fg-3);font-style:italic">“Unfiltered, uncensored, unforgettable.”</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 24 · SUCCESS CASES -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Proof</div>
-    <h2 class="headline">Creators are already winning</h2>
-    <div class="cards two mt40">
-      <div class="card"><div class="knum">GILOO FEST 2023</div><h3>Global debut</h3><p>USD 1.36M in prizes, a Discord-based filmmaker community.</p></div>
-      <div class="card"><div class="knum">LIVE Q&amp;A</div><h3>1,000+ attending</h3><p>Online sessions with Shunji Iwai &amp; <i>A Chip Odyssey</i>.</p></div>
-      <div class="card"><div class="knum">CROWDFUNDING</div><h3>Funded by fans</h3><p>“Hold the Hope” documentary financed directly by its audience.</p></div>
-      <div class="card"><div class="knum">SCREENINGS + MERCH</div><h3>Sold direct</h3><p><i>Bel Ami</i> — group screenings and merchandise to audiences.</p></div>
+<!-- ══════════════════════════════════════════
+     CATEGORY 3：行銷 & KOC
+════════════════════════════════════════════ -->
+<section class="cat" id="marketing">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">行銷 &amp; KOC 基礎設施</div>
+      <div class="cat-en">Marketing &amp; KOC Infrastructure</div>
     </div>
-    <div class="spacer"></div>
+    <div class="cat-count">2 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 25 · TAIWAN GLOBAL -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Taiwan to the World</div>
-    <h2 class="headline">Taiwanese films, global stages</h2>
-    <ul class="list mt40">
-      <li><b>Bonjour la France, ici Taiwan</b> — Paris screenings with mk2 &amp; TAICCA</li>
-      <li>Taiwan Film Festival of Boston — online edition</li>
-      <li>Taipei Graphic Arts Festival — Amsterdam &amp; Taipei</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
+  <div class="cards">
 
-<!-- 26 · FEATURED CREATORS -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Featured Creators</div>
-    <h2 class="headline">Directors, brands &amp; distributors<br>on one stage</h2>
-    <div class="chips mt40">
-      <span class="chip">Wei Te-Sheng</span><span class="chip">Lau Kek-Huat</span><span class="chip">Jun Li</span><span class="chip">Wang Yan-ping</span>
-      <span class="chip">The Reporter</span><span class="chip">Parallax Films</span><span class="chip">Kaohsiung Film Archive</span>
-      <span class="chip">Fresh Wave</span><span class="chip">Cai Chang International</span><span class="chip">Andrews Film</span>
+    <!-- Agentio -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Agentio</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">💰 Series B $4,000 萬（估值 $3.4 億）</span>
+            <span class="chip">📱 AI-native 創作者廣告平台</span>
+            <span class="rel-tag rel-learn">取經</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            AI-native 創作者廣告平台，2025 年 Series B 募資 $4,000 萬（總募資 $5,600 萬，估值 $3.4 億）。把 creator 廣告從人工媒合，升級為像 Meta/Google Ads 一樣可購買、可定價、可追蹤的媒體基礎設施。品牌可以直接在平台上找到適合的創作者、定價、下單、追蹤績效，不需要人工 BD。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Agentio 能回答 Giloo 最關鍵的 KOC 問題：<strong>creator campaign 是否可以被產品化、定價化、績效化，而不是每次靠人工 BD？</strong> 他們的基礎設施邏輯直接對應 Giloo 想把 KOC 動員從「人工名單」升級成「可媒合、可追蹤、可分潤」的目標。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            Giloo 可以參考 Agentio 的定價與績效追蹤邏輯，設計自己的 KOC 分潤系統。更直接的可能是：Giloo 的電影 KOC campaign，透過 Agentio 的基礎設施找到合適的美國創作者，由 Agentio 處理媒合和付款，Giloo 提供內容素材和影片知識。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Agentio 創辦團隊</div>
+              <div class="cp-role">透過 LinkedIn 或 NY creator economy 人脈引薦</div>
+              <a class="cp-link" href="https://agentio.com" target="_blank">agentio.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 27 · SECTION 3 -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:26px">For Everyone</div>
-    <h2 class="display-lg">3 &nbsp;·&nbsp; Impact Partner</h2>
-    <p class="lede mt24">Become a Giloo Impact Partner.</p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 28 · IMPACT STATEMENT -->
-<section class="slide">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Impact Partner</div>
-    <h2 class="display-lg">Let the films you love<br>travel <span class="red">further</span>.</h2>
-    <p class="lede mt32 cjk" style="font-size:26px;color:var(--fg)">讓你喜歡的電影，走到更遠的地方。</p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 29 · ALREADY DOING -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">You Already Do This</div>
-    <h2 class="headline">We turn it into work<br>that <span class="red">accumulates</span></h2>
-    <ul class="list mt40">
-      <li>You finish a film and write about it</li>
-      <li>Friends ask you what is worth watching</li>
-      <li>You run screenings, build lists, share what matters</li>
-    </ul>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 30 · THREE REASONS -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">Why Join</div>
-    <h2 class="headline">Three reasons to join</h2>
-    <div class="cards three mt48">
-      <div class="card ai"><div class="knum">01 — IMPACT</div><h3>Create influence</h3><p>Recommend films and move important issues with your own viewpoint.</p></div>
-      <div class="card ai"><div class="knum">02 — TOOLKIT</div><h3>10-minute pack</h3><p>Curated clips, copy and templates — ready to post.</p></div>
-      <div class="card ai"><div class="knum">03 — INCOME</div><h3>You earn</h3><p>When viewers rent or subscribe via your link, you get a share.</p></div>
+    <!-- Picture Motion -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Picture Motion</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🎯 社會影響力電影行銷</span>
+            <span class="chip">💡 深度合作潛力</span>
+            <span class="rel-tag rel-hot">對 Giloo 有興趣</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            社會影響力電影行銷公司，專為紀錄片 + 社會議題電影設計草根行銷、倡議合作、社區放映、影響力活動。服務過大量知名紀錄片的美國院線推廣，擅長 NGO 聯繫、校園放映、倡議組織動員。創辦人 Christie Marchese 是美國 impact documentary 圈的核心人脈。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Picture Motion 手工做的所有事——找 NGO 合作、設計放映活動、聯繫倡議社群、管理 speaker——<strong>Giloo 的 AI 可以自動化大半</strong>。他們是 Giloo 發行模型的「人工版對照組」，最直接的市場驗證：問他們目前最耗時的流程是什麼，那就是 Film Brain 最該解決的問題。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>合作：</strong>Picture Motion 負責策略和人脈，Giloo AI 負責執行效率，共同服務 impact documentary 客戶。<br><br>
+            <strong>深化合作：</strong>如果 Giloo 要在美國建立 impact 發行管道，Picture Motion 的人脈網絡是最快的路徑——比從零建立省幾年時間。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Christie Marchese</div>
+              <div class="cp-role">創辦人，Picture Motion</div>
+              <a class="cp-link" href="https://www.picturemotion.com" target="_blank">picturemotion.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spacer"></div>
+
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
 </section>
 
-<!-- 31 · HOW IT WORKS -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">How It Works</div>
-    <h2 class="headline">Four steps</h2>
-    <div class="steps mt48">
-      <div class="step"><div class="n">1</div><h3>Apply</h3><p>Become an Impact Partner.</p></div>
-      <div class="step"><div class="n">2</div><h3>Pick a film</h3><p>Choose one you love.</p></div>
-      <div class="step"><div class="n">3</div><h3>Recommend</h3><p>Your way, with our toolkit.</p></div>
-      <div class="step"><div class="n">4</div><h3>Earn</h3><p>Track results, collect your share.</p></div>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY 4：電影機構
+════════════════════════════════════════════ -->
+<section class="cat" id="institutions">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">電影機構 &amp; 生態系</div>
+      <div class="cat-en">Film Institutions &amp; Ecosystem</div>
     </div>
-    <div class="spacer"></div>
+    <div class="cat-count">3 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
 
-<!-- 32 · THREE-SIDED WIN -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">Why Creators Love It Too</div>
-    <h2 class="headline">The community<br>becomes the <span class="red">distribution</span></h2>
-    <div class="pillars mt48">
-      <div><b>Creators</b>earn from every recommendation</div>
-      <div><b>Audiences</b>discover films they'd never find</div>
-      <div><b>Partners</b>are rewarded for their taste</div>
+  <div class="cards">
+
+    <!-- Film Independent -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Film Independent</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">🏛️ 非營利機構</span>
+            <span class="chip">🎬 Film Independent Spirit Awards 主辦方</span>
+            <span class="rel-tag rel-eco">生態系入口</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            美國最重要的獨立電影非營利機構之一，主辦 Spirit Awards、Project Involve、filmmaker programs。會員網絡涵蓋大量獨立片方、製作人、發行商、投資人。每年大量活動。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            這是 Giloo 進入美國 indie filmmaker 網絡的入口。一個好的關係可以帶來多個後續：filmmaker 合作、投資人引薦、產業信譽建立。可以談 Giloo Film Brain 是否能成為他們 filmmaker program 的工具資源。
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="lede mt40">A three-sided win that compounds over time.</p>
-    <div class="spacer"></div>
+
+    <!-- The Gotham -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">The Gotham</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🏛️ 非營利機構</span>
+            <span class="chip">🎬 IFP 前身，indie film career building</span>
+            <span class="rel-tag rel-eco">生態系入口</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            美國 indie film career-building 的重要機構，前身為 IFP。每年支持大量獨立電影製作人，提供 market、labs、grants、awards。是紐約最重要的獨立電影生態系入口。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            生態系聯絡網建立。The Gotham 認識紐約所有重要的獨立片方、資金方、發行商。可以談亞洲紀錄片 + AI 發行工具是否能成為 member benefit 或 workshop 主題，建立長期關係。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Film Collaborative -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Film Collaborative</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">🏛️ 非營利機構</span>
+            <span class="chip">📊 DIY 發行數據先驅</span>
+            <span class="rel-tag rel-learn">取經 + 數據</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            非營利發行支援機構，為獨立電影提供發行諮詢、DIY 發行工具、收入分析、受眾分析等服務。創辦人 <strong>Orly Ravid</strong> 是美國 DIY 發行領域的先驅，累積了大量小型獨立片的真實發行數據，橫跨各個細分平台。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Film Collaborative 有大量真實的獨立電影發行數據（哪部片、哪個平台、哪個城市、多少收入），這是訓練和驗證 Film Brain 最珍貴的素材。可以探索<strong>數據合作 + Film Brain 成為他們推薦給片方的 AI 工具</strong>兩條路同時走。
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
 </section>
 
-<!-- SURPRISED -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">What surprised us</div>
-    <h2 class="display-lg">Viewers wanted to do<br>more than <span class="red">watch</span>.</h2>
-    <p class="lede mt40">We built a place to watch films. What surprised us: people didn't just want to watch — they wanted to recommend, host screenings, and bring others in. That insight is what became Impact Partner.</p>
-    <div class="spacer"></div>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY 5：內容代理 & 通路
+════════════════════════════════════════════ -->
+<section class="cat" id="sales">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">內容代理 &amp; 通路</div>
+      <div class="cat-en">Content Sales &amp; Distribution Channels</div>
+    </div>
+    <div class="cat-count">7 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
+
+  <div class="cards">
+
+    <!-- Abramorama -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Abramorama</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🎬 事件電影 / 社會影響力紀錄片</span>
+            <span class="chip">🎵 音樂紀錄片發行先驅</span>
+            <span class="rel-tag rel-hot">對 Giloo 有興趣</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            美國事件電影（event cinema）發行的先驅，以「需要觀眾動員力的電影」為核心——音樂紀錄片、社會影響力紀錄片、世界電影。代理過大量重量級音樂紀錄片和社會影響力片的美國院線，擅長城市巡迴、NGO 社區放映、倡議合作。創辦人兼 CEO <strong>Richard Abramowitz</strong> 是美國 event cinema 模式的開創者，在獨立紀錄片發行圈有 20+ 年深厚人脈。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Abramorama 的每一場放映，本質上都是「把正確的社群帶到正確的電影」——這和 Film Brain 的核心邏輯完全一致。他們人工做的所有事：找 NGO 合作夥伴、聯繫倡議社群、協調 speaker、設計放映活動，<strong>Film Brain 可以 AI 化大半</strong>。客戶（紀錄片 + 社會影響力電影）和 Giloo 的目標片型高度重疊。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>短期：</strong>Giloo 亞洲社會影響力紀錄片（如《造山者》）委託 Abramorama 美國院線發行，Film Brain 提供觀眾分析輔助選場城市。<br><br>
+            <strong>中期：</strong>Film Brain 嵌入 Abramorama 工作流，加速他們的社群識別和 KOC 動員，成為 AI 合作夥伴。<br><br>
+            <strong>長期：</strong>共建「亞洲社會影響力電影進入美國」的專屬通道。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Richard Abramowitz</div>
+              <div class="cp-role">創辦人 / CEO，Abramorama</div>
+              <a class="cp-link" href="https://abramorama.com" target="_blank">abramorama.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cinetic Media -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-2">★★☆ 強烈建議</span>
+        <div class="name-block">
+          <div class="co-name">Cinetic Media</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🤝 融資 / 銷售 / 代理</span>
+            <span class="chip">🏆 獨立電影圈關係中樞</span>
+            <span class="rel-tag rel-eco">引薦中心</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            美國獨立電影圈最重要的諮詢、融資、銷售、代理公司之一，由 <strong>John Sloss</strong> 創辦。代理過大量 Sundance 重磅片的北美和國際銷售，包括《Boyhood》、《Beasts of the Southern Wild》。涵蓋製作融資、版權銷售、財務顧問、發行策略全鏈路。<strong>Cinetic 知道誰有錢、誰在找片、誰想投資</strong>——是整個美國獨立電影圈的關係中樞。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            這不只是一個合作對象，而是<strong>打開其他 10 個門的鑰匙</strong>。Cinetic 的一個引薦可以帶來投資人、發行商、版權買家。從《造山者》北美銷售到 Giloo 自己的募資，Cinetic 都能扮演顧問或中間人角色，是建立美國生態系聯絡網最有效率的切入點。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">合作可能性</div>
+          <div class="sec-text">
+            <strong>短期：</strong>Giloo 亞洲片庫（《造山者》優先）的北美版權銷售代理。<br><br>
+            <strong>中期：</strong>Cinetic 作為 Giloo 美國市場的策略顧問和投資人引薦中心。<br><br>
+            <strong>長期：</strong>大型戰略合作談判的必要中間人角色。
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">John Sloss</div>
+              <div class="cp-role">創辦人，Cinetic Media</div>
+              <a class="cp-link" href="https://cineticmedia.com" target="_blank">cineticmedia.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submarine Entertainment -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Submarine Entertainment</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🌍 國際紀錄片銷售代理</span>
+            <span class="rel-tag rel-eco">通路</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            國際銷售代理，專長是把紀錄片和獨立電影從製作國賣到全球市場，代理過多部重要世界電影。強項是將非英語片推入北美和歐洲發行市場。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Giloo 台灣 / 亞洲內容出海的最自然合作夥伴。他們知道怎麼把非英語片賣進北美和歐洲，Giloo 提供 AI 分析讓他們更有把握哪部片對哪個市場有機會。可以談《造山者》或 Giloo 片庫的國際銷售合作。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kino Marquee -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Kino Marquee</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🎭 Kino Lorber 旗下虛擬院線</span>
+            <span class="chip">🎨 Arthouse 觀眾</span>
+            <span class="rel-tag rel-eco">通路</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            Kino Lorber 旗下的虛擬院線平台，服務美國最重要的 arthouse 電影院網絡，讓這些電影院可以在線上辦虛擬放映。客戶群和 Giloo 的目標觀眾（arthouse、世界電影迷）高度重疊。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Giloo 亞洲紀錄片 / 獨立電影在美國的虛擬放映，透過 Kino Marquee 的院線網絡推廣。這是進入美國 arthouse 觀眾最直接的管道，不需要自己建立戲院關係。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Greenwich Entertainment -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Greenwich Entertainment</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">🎭 精品獨立戲院發行</span>
+            <span class="chip">🎬 紀錄片專家</span>
+            <span class="rel-tag rel-eco">通路</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            精品獨立電影戲院發行商，專長是將優質紀錄片和獨立電影推入美國院線。比大型發行商更靈活，城市巡迴策略精準，善於找出 niche 觀眾。代理過多部國際紀錄片的美國戲院推廣，包含世界電影和社會議題片。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Giloo 亞洲紀錄片在美國的潛在院線入口。Film Brain 的觀眾分析可以告訴 Greenwich 哪部亞洲片在哪些城市有票房潛力，幫他們降低接片風險——這是一個很好的合作切入點。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Magnolia Pictures -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Magnolia Pictures</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY / LA</span>
+            <span class="chip">🎬 成熟獨立發行商</span>
+            <span class="chip">💰 2929 Entertainment（Mark Cuban）背景</span>
+            <span class="rel-tag rel-eco">通路</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            美國成立多年的獨立電影發行商，涵蓋院線、VOD、數位、實體完整發行能力。母公司 2929 Entertainment 背後是 Mark Cuban 和 Todd Wagner。擅長多元類型，有一定的非英語片和世界電影發行經驗。近年加重 VOD / 串流比重。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            了解美國獨立發行格局的重要參考。Magnolia 有完整的發行基礎設施，如果 Giloo 亞洲片需要美國院線 + VOD 的全套發行夥伴，Magnolia 是選項之一。Mark Cuban 背景也代表這可能是潛在的資金方接觸管道。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cargo -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 可訪</span>
+        <div class="name-block">
+          <div class="co-name">Cargo</div>
+          <div class="co-chips">
+            <span class="chip">📍 New York, NY</span>
+            <span class="chip">🎬 紀錄片精品銷售代理</span>
+            <span class="rel-tag rel-eco">通路</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            精品紀錄片銷售與發行公司，專注於創意非虛構類影片（nonfiction）。規模小但定位精準，在文化類、藝術類紀錄片領域有一定影響力，主要服務獨立紀錄片導演的北美和國際版權銷售。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Giloo 亞洲紀錄片北美版權銷售的潛在通路，特別適合文化類、藝術類紀錄片的精品發行路線。規模適中，比大型銷售公司更容易切入合作。
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- STILL HARD -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">What's still hard</div>
-    <h2 class="headline">We haven't solved everything</h2>
-    <ul class="list mt40">
-      <li>Discovery is still hard — great films still get missed</li>
-      <li>Sustainable creator income takes scale we're still building</li>
-      <li>Reaching audiences beyond Chinese-language markets is just beginning</li>
-    </ul>
-    <p class="lede mt40">We're sharing this because we're still figuring it out — and we'd rather learn alongside you.</p>
-    <div class="spacer"></div>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY 6：AI 製作工具
+════════════════════════════════════════════ -->
+<section class="cat" id="ai">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">AI 製作工具</div>
+      <div class="cat-en">AI Film Production Tools</div>
+    </div>
+    <div class="cat-count">2 家</div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
+
+  <div class="cards">
+
+    <!-- Asteria / XTR -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 有引薦再訪</span>
+        <div class="name-block">
+          <div class="co-name">Asteria Film Co. / XTR</div>
+          <div class="co-chips">
+            <span class="chip">📍 Los Angeles, CA</span>
+            <span class="chip">🤖 AI 製作 OS</span>
+            <span class="chip">⚠️ 已將 Documentary+ 售出</span>
+            <span class="rel-tag rel-learn">了解競品</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec full">
+          <div class="sec-label">公司介紹（重要背景）</div>
+          <div class="sec-text">
+            XTR 原本是洛杉磯的 premium 紀錄片製片公司，同時持有 Documentary+ 串流平台。<strong>2026 年 3 月，XTR 將 Documentary+ 售出給 acTVe（見上）</strong>，自身專注 AI 製作工具路線。2024 年收購 AI 動畫公司 Late Night Labs，形成 Asteria Film Co.，並與 Moonvalley 合作推出 licensed-data AI 影片模型 Marey，以及 Continuum Suite（劇本、角色、場景、排程、預算 AI 一體化製作 OS）。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">與 Documentary+ 的關係</div>
+          <div class="sec-text">
+            <strong>這兩家現在是完全獨立的公司</strong>，服務不同環節：XTR/Asteria 做 AI 製作（pre-production、劇本、AI 影片生成），Documentary+/acTVe 做發行串流。拜訪 Documentary+ 和拜訪 Asteria 不重複。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            Giloo 的核心是發行智能，不是製作工具，與 Asteria 的直接重疊較少。但如果 Giloo 未來要擴展到製作前期服務，或想了解亞洲內容如何對接好萊塢 AI 製作工作流，Asteria 是最直接的對象。<strong>有 warm intro 再訪，不必主動安排。</strong>
+          </div>
+        </div>
+        <div class="sec full">
+          <div class="sec-label">聯絡人</div>
+          <div class="contact-grid">
+            <div class="contact-person">
+              <div class="cp-name">Bryn Mooser</div>
+              <div class="cp-role">創辦人 / CEO，XTR / Asteria</div>
+              <a class="cp-link" href="https://www.xtr.com" target="_blank">xtr.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Largo.ai -->
+    <div class="card">
+      <div class="card-head">
+        <span class="pri pri-1">★☆☆ 了解競爭格局</span>
+        <div class="name-block">
+          <div class="co-name">Largo.ai</div>
+          <div class="co-chips">
+            <span class="chip">📍 Santa Monica, CA</span>
+            <span class="chip">🤖 AI 電影決策分析</span>
+            <span class="chip">🎯 主流製片公司客戶</span>
+            <span class="rel-tag rel-learn">了解競品</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-div"></div>
+      <div class="card-body">
+        <div class="sec">
+          <div class="sec-label">公司介紹</div>
+          <div class="sec-text">
+            AI 電影決策分析工具，幫助製片公司和大型發行商評估劇本市場性、預測票房、優化 greenlight 決策。主要客戶是主流製片公司和大型發行商，而非獨立紀錄片市場。服務「要不要做這部片」的製作前決策，而非「怎麼把這部片賣出去」的發行後執行。
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sec-label">Giloo 應該拜訪的原因</div>
+          <div class="sec-text">
+            了解競爭格局。Largo.ai 是 Film Brain 的間接對照——他們服務大片製作決策，Giloo 服務獨立片發行執行。差異明顯，不是直接競爭。了解他們的技術邊界有助於 Giloo 找到清晰的差異化定位。<strong>有認識再訪，不必主動安排。</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- 33 · SECTION 4 -->
-<section class="slide alt">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:26px">What's Next</div>
-    <h2 class="display-lg">4 &nbsp;·&nbsp; Where We're Going</h2>
+
+<!-- ══════════════════════════════════════════
+     PITCH FRAMEWORK
+════════════════════════════════════════════ -->
+<section style="margin-bottom: 64px;">
+  <div class="cat-header">
+    <div class="cat-bar"></div>
+    <div>
+      <div class="cat-title">每場會議的 Pitch 框架</div>
+      <div class="cat-en">Universal Pitch Framework</div>
+    </div>
   </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
+
+  <div class="pitch-box">
+    <h3>對所有對象說的版本</h3>
+    <p>"Giloo is building the AI distribution brain for independent films and documentaries — we turn each film into structured intelligence: audience clusters, campaign assets, KOC leads, and distribution recommendations. We're starting with Asian cinema, where we have the deepest filmmaker relationships and content library, and expanding globally."</p>
+    <h3 style="margin-top: 24px;">談到合作深度時</h3>
+    <p>"We're curious how you think about the intersection of your infrastructure and AI-native tools — whether that's through integration, partnership, or something deeper down the road."</p>
+    <h3 style="margin-top: 24px;">每場必問的三個問題</h3>
+    <p style="font-style: normal; color: var(--fg2); font-size: 14px;">
+      1. 你們現在最大的 distribution / discovery 痛點是什麼？<br>
+      2. 如果有工具能自動識別每部片最適合的觀眾社群和 KOC，你會優先用在哪個環節？<br>
+      3. 你們有沒有在看亞洲內容？亞洲市場現在對你們重要嗎？
+    </p>
+  </div>
 </section>
 
-<!-- 34 · VISION -->
-<section class="slide">
-  <div class="pad center">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:30px">The Vision</div>
-    <h2 class="display-lg">Not one blockbuster —<br>a <span class="red">system</span>.</h2>
-    <p class="lede mt32">Creators upload. Community amplifies. Impact compounds.</p>
-    <p class="lede mt16 cjk" style="color:var(--fg)">讓台灣與亞洲電影，被世界看見。</p>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
+</main>
 
-<!-- TAKEAWAYS -->
-<section class="slide alt">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">If you take one thing</div>
-    <h2 class="headline">What you can take away</h2>
-    <ul class="list mt40">
-      <li>A finished film is a <b>beginning</b>, not an end — plan its second life</li>
-      <li>Your most valuable audience already shares — give them a way to</li>
-      <li><b>Curation and community are distribution</b></li>
-    </ul>
-    <p class="lede mt40">True whether or not you ever use Giloo.</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 35 · CTA -->
-<section class="slide">
-  <div class="pad">
-    <div class="rule"></div>
-    <div class="eyebrow" style="margin-bottom:32px">Let's talk</div>
-    <h2 class="headline">If you're doing this too,<br>let's talk</h2>
-    <ul class="list mt40">
-      <li><b>Directors</b> — bring your film a second life</li>
-      <li><b>Cinephiles</b> — turn what you share into impact</li>
-      <li><b>Industry &amp; festivals</b> — let's build reach together</li>
-    </ul>
-    <p class="lede mt40 red" style="font-weight:600">giloo.ist</p>
-    <div class="spacer"></div>
-  </div>
-  <div class="footer-mark">giloo<span class="dot">.</span></div>
-</section>
-
-<!-- 36 · CLOSING -->
-<section class="slide">
-  <div class="pad center">
-    <div class="wordmark" style="position:absolute;top:76px;left:96px">giloo<span class="dot">.</span></div>
-    <div class="rule"></div>
-    <h2 class="display-xl">Beyond Festivals<br>and Streamers</h2>
-    <p class="lede mt32">Thank you &nbsp;—&nbsp; Q &amp; A &nbsp;·&nbsp; giloo.ist</p>
-  </div>
-</section>
+<footer>
+  <p>Giloo 美國行程戰略拜訪名單 &nbsp;·&nbsp; 整理日期 2026-06-26 &nbsp;·&nbsp; 整合兩份名單（共 20 家）<br>
+  Documentary+ / acTVe 資訊最新，Ionic Studios 投資公告日期 2026-06-16</p>
+</footer>
 
 </body>
 </html>
